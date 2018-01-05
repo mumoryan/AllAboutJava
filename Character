@@ -1,0 +1,11 @@
+Methods:
+1. Character.toLowerCase(char ch)
+  1. Returns lower case letter of ch
+  2. Converts the character argument to lowercase using case mapping information from the UnicodeData file.
+  3. Related problems in Leetcode:
+    1. 500. Keyboard Row, easy
+2. Character.toUpperCase(char ch)
+  1. Returns upper case letter of ch
+  2. Converts the character argument to uppercase using case mapping information from the UnicodeData file.
+  3. Related problems in Leetcode:
+    1. 500. Keyboard Row, easy
