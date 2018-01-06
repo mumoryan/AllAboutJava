@@ -1,0 +1,6 @@
+Queue
+1. Is an interface, similar to list, unlike stack
+2. Can be instantiated with LinkedList, example: Queue<Integer> q = new LinkedList<>();
+3. Methods
+  1. poll(): Retrieve the head of queue
+  2. offer(element): Add to end of queue
