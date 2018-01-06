@@ -8,6 +8,7 @@
 
 	Important update: Originally the code above used new String[list.size()]. However, this blogpost (see original link above) reveals that due to JVM optimizations, using new String[0] is better now.
 
+	Note that the returned array will be "safe" in that no references to it are maintained by this list. (In other words, this method must allocate a new array even if this list is backed by an array). The caller is thus free to modify the returned array.
 2. Array to List:
 	Arrays.asList(ia)
 	It takes an array ia and creates a wrapper that implements List<Integer>, which makes the original array available as a list. Nothing is copied and all, only a single wrapper object is created. Operations on the list wrapper are propagated to the original array. This means that if you shuffle the list wrapper, the original array is shuffled as well, if you overwrite an element, it gets overwritten in the original array, etc. Of course, some List operations aren't allowed on the wrapper, like adding or removing elements from the list, you can only read or overwrite the elements.
