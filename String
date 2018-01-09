@@ -1,0 +1,5 @@
+Methods:
+1. str.indexOf(String pattern)
+	1. This will return the index of the first occurance of pattern within string str! Return -1 is not found.
+	2. This can also be used for character
+	3. Will return 0 if pattern is ""
